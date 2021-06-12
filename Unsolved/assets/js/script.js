@@ -4,7 +4,7 @@ var question = [
     {q: ' You can sneeze during sleep.', a: 'F' },
     {q: ' A double rainbow is a mirror image of the first rainbow.', a: 'T' },
     {q: ' Bats always turn right when leaving a cave.', a: 'F' },
-    {q: ' You get a new top layer of skin (epidermis) every 7 days.', a: 'f' },
+    {q: ' You get a new top layer of skin (epidermis) every 7 days.', a: 'F' },
     {q: ' Bananas grow upside down.', a: 'T' }
 ];
 
@@ -20,8 +20,8 @@ for (var i = 0; i < question.length; i++)
     //console.log(ans)
 
     // TODO: Check the user's answer against the correct answer
-    if ((ans === true && question.length[i].a === 'T') || 
-        (ans === true && question.length[i].a === 'F'))
+    if ((ans === true && question[i].a === 'T') || 
+        (ans === true && question[i].a === 'F'))
     {
         // TODO: Alert the user if they are correct or wrong. Increment the score accordingly
         score++;
@@ -35,7 +35,7 @@ for (var i = 0; i < question.length; i++)
     
 }
 // TODO: At the end of the game, alert the user with the final score
-alert('GAME IS OVER !'+'/nYour final score is ' + score + ' out of ' + question.length);
+alert('GAME IS OVER !' + '\nYour final score is ' + score + ' out of ' + question.length);
 
 
 
